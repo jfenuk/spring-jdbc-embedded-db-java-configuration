@@ -5,26 +5,27 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class Employee {
-	public Employee() {
-	}
-
-	public Employee(String name, float salary) {
-		
-		this.name = name;
-		this.salary = salary;
-
-	}
 
 	private int id;
 	private String name;
 	private float salary;
 
-	public int getId() {
-		return id;
+	public Employee(String name, float salary) {
+
+		this.name = name;
+		this.salary = salary;
+
+	}
+	public Employee(int id, String name, float salary) {
+
+		this.id = id;
+		this.name = name;
+		this.salary = salary;
+
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public int getId() {
+		return id;
 	}
 
 	public String getName() {
