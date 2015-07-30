@@ -16,6 +16,7 @@ public class App {
 
 	public void run() {
 
+		@SuppressWarnings("resource")
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(
 				AppConfig.class);
 		EmployeeJdbcRepository dao = context.getBean(EmployeeJdbcRepository.class);
